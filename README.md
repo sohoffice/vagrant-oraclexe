@@ -24,9 +24,9 @@ Steps
 - Before you start up your vagrant vm, we need to preprocess the rpm into deb format so that ubuntu can install it.
   Please go to the downloaded zip and execute the following
 
-	unzip oracle-xe-11.2.0.1.0.x86_64.rpm.zip
-	cd Disk1/
-	sudo alien --to-deb --scripts oracle-xe-11.2.0-1.0.x86_64.rpm
+    unzip oracle-xe-11.2.0.1.0.x86_64.rpm.zip
+    cd Disk1/
+    sudo alien --to-deb --scripts oracle-xe-11.2.0-1.0.x86_64.rpm
 
   Please copy the output file, oracle-xe-11.2.0-1.0.x86_64.deb, to <project>/provisioning/files
 
@@ -43,5 +43,4 @@ By now the installation part is completed, but you'll have to configure your dat
 That should do the trick. In case it doesn't, please let me know.
 
 --
-Douglas Liu
-sohoffice at gmail dot com
+<Douglas Liu> sohoffice at gmail dot com
