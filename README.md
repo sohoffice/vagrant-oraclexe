@@ -30,17 +30,17 @@ Steps
   sudo alien --to-deb --scripts oracle-xe-11.2.0-1.0.x86_64.rpm
   ```
 
-  Please copy the output file, oracle-xe-11.2.0-1.0.x86_64.deb, to <project>/provisioning/files
+  Please copy the output file, oracle-xe-11.2.0-1.0.x86_64.deb, to (project dir)/provisioning/files
 
-- cd <project>
-- 'vagrant up'
+- cd into the project directory
+- `vagrant up`
 - Wait and see if there's anything goes wrong.
-- 'vagrant reload' to restart the vagrant box
+- `vagrant reload` to restart the vagrant box
 
 By now the installation part is completed, but you'll have to configure your database manually. In the process Oracle XE will need to know your password, port number sort of information.
 
-- 'vagrant ssh' to login to the vagrant box
-- 'sudo /etc/init.d/oracle-xe configure', please make sure this is executed on the vagrant box.
+- `vagrant ssh` to login to the vagrant box
+- `sudo /etc/init.d/oracle-xe configure`, please make sure this is executed on the vagrant box.
 
 That should do the trick. In case it doesn't, please let me know.
 
