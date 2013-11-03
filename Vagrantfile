@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  config.vm.hostname = "dev.gucp.vm"
+  config.vm.hostname = "dev.vagrant-oraclexe.vm"
   
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--ioapic", "on"]
